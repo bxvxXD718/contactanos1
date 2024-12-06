@@ -1,0 +1,10 @@
+.letra {
+    font-family: 'Comic Sans MS', sans-serif;
+}
+.carta {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.carta:hover {
+    transform: translateY(-15px);
+}

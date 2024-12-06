@@ -1,0 +1,22 @@
+<div class="container letra">
+    <div class="row">
+        <div class="col-md-12">
+            <br>
+            <h1 class="text-center pb-5">Soluciones Técnicas en Computación: Reparación, Mantenimiento y Soporte Profesional</h1>
+            <div class="row pb-3">
+                <div class="col-md-4" *ngFor="let solicitud of solicitudes_formulario">
+                    <div class="card" style="width: 18rem;">
+                        <img *ngIf="solicitud.nombre == 'Mantenimiento Preventivo PC'" src="assets/Mantenimiento Preventivo PC.jpg" class="card-img-top">
+                        <img *ngIf="solicitud.nombre == 'Formateo PC'" src="assets/Formateo PC.png" class="card-img-top">
+                        <img *ngIf="solicitud.nombre == 'Optimizacion PC'" src="assets/Optimizacion PC.webp" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ solicitud.nombre }}</h5>
+                            <p class="card-text">{{ solicitud.descripcion }}</p>
+                            <p class="card-text text-center">${{ solicitud.valor }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
